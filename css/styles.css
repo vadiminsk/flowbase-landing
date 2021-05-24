@@ -89,7 +89,7 @@ h4 {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 img {
@@ -163,6 +163,10 @@ img {
 
 /* About */
 
+.about {
+  padding-top: 100px;
+}
+
 .about .container {
   overflow: hidden;
 }
@@ -189,4 +193,19 @@ img {
 .about__image {
   float: right;
   width: 50%;
+}
+
+/* Logos */
+
+.logos__items {
+  overflow: hidden;
+}
+
+.logos__items .item {
+  float: left;
+  margin-right: 7vw;
+}
+
+.logos__items .item:last-child {
+  margin-right: 0;
 }
