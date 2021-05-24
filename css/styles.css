@@ -198,6 +198,10 @@ img {
 
 /* Logos */
 
+.logos {
+  padding-bottom: 100px;
+}
+
 .logos__items {
   overflow: hidden;
 }
@@ -212,10 +216,6 @@ img {
 }
 
 /* Subscription */
-
-.subscription {
-  padding-top: 150px;
-}
 
 .subscription .container {
   overflow: hidden;
@@ -240,6 +240,7 @@ img {
 
 .metrics {
   padding-top: 35px;
+  padding-bottom: 75px;
 }
 
 .metrics__text {
@@ -251,4 +252,34 @@ img {
 .metrics__image {
   float: right;
   width: 45%;
+}
+
+/* Features */
+
+.features {
+  padding-bottom: 100px;
+}
+
+.features .items {
+  overflow: hidden;
+}
+
+.features .item {
+  float: left;
+  width: 33%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.features .item img {
+  margin-bottom: 7px;
+}
+
+.features .item h4 {
+  margin-bottom: 20px;
+}
+
+.features .item p {
+  font-size: 16px;
+  line-height: 24px;
 }
