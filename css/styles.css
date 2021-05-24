@@ -235,3 +235,20 @@ img {
 .subscription__text p {
   margin-bottom: 30px;
 }
+
+/* Metrics */
+
+.metrics {
+  padding-top: 35px;
+}
+
+.metrics__text {
+  float: left;
+  width: 45%;
+  padding-top: 140px;
+}
+
+.metrics__image {
+  float: right;
+  width: 45%;
+}
