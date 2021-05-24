@@ -73,6 +73,30 @@ h4 {
   cursor: pointer;
 }
 
+.btn-blue {
+  background: #5454d4;
+}
+
+.down {
+  height: 60px;
+  width: 60px;
+  background: #ffffff;
+  border: 1px solid #e7e7e7;
+  border-radius: 50%;
+  color: #19191b;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Header */
 
 .header {
@@ -135,4 +159,34 @@ h4 {
 
 .header__button {
   float: right;
+}
+
+/* About */
+
+.about .container {
+  overflow: hidden;
+}
+
+.about__text {
+  float: left;
+  width: 44%;
+  padding-top: 90px;
+}
+
+.about__text h1 {
+  margin: 0 0 30px;
+}
+
+.about__text p {
+  margin: 0 0 50px;
+}
+
+.about__text--buttons .btn {
+  float: left;
+  margin-right: 40px;
+}
+
+.about__image {
+  float: right;
+  width: 50%;
 }
