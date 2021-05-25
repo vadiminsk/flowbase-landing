@@ -6,6 +6,25 @@
   padding: 0;
 }
 
+/* Fonts */
+@font-face {
+  font-family: 'Mulish';
+  src: url('../fonts/Mulish-Regular.woff2') format('woff2'),
+    url('../fonts/Mulish-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('../fonts/DMSans-Bold.woff2') format('woff2'),
+    url('../fonts/DMSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
   max-width: 1100px;
   width: 100%;
@@ -15,6 +34,7 @@
 
 body {
   color: #696871;
+  font-family: 'Mulish';
 }
 
 p {
@@ -27,6 +47,7 @@ h1 {
   font-size: 80px;
   line-height: 77px;
   color: #19191b;
+  font-family: 'DM Sans';
 }
 
 h2 {
@@ -34,6 +55,7 @@ h2 {
   font-size: 60px;
   line-height: 70px;
   color: #19191b;
+  font-family: 'DM Sans';
 }
 
 h3 {
@@ -42,6 +64,7 @@ h3 {
   font-size: 50px;
   line-height: 57px;
   color: #19191b;
+  font-family: 'DM Sans';
 }
 
 h4 {
@@ -49,6 +72,7 @@ h4 {
   font-size: 24px;
   line-height: 36px;
   color: #19191b;
+  font-family: 'DM Sans';
 }
 
 .learn-more {
@@ -57,6 +81,7 @@ h4 {
   line-height: 22px;
   color: #5454d4;
   text-decoration: none;
+  font-family: 'DM Sans';
 }
 
 .btn {
@@ -72,10 +97,15 @@ h4 {
   text-align: center;
   color: #fff;
   cursor: pointer;
+  font-family: 'DM Sans';
 }
 
 .btn-blue {
   background: #5454d4;
+}
+
+button {
+  font-family: 'DM Sans';
 }
 
 .down {
@@ -282,4 +312,128 @@ img {
 .features .item p {
   font-size: 16px;
   line-height: 24px;
+}
+
+/* Price */
+
+.price {
+  padding-bottom: 150px;
+}
+
+.price__plan {
+  overflow: hidden;
+  padding-bottom: 98px;
+}
+
+.price__plan--title {
+  float: left;
+  width: 55%;
+}
+
+.price__plan--buttons {
+  float: right;
+  width: 40%;
+  text-align: right;
+  padding-top: 45px;
+}
+
+.price__plan--buttons button {
+  height: 60px;
+  min-width: 160px;
+  padding: 20px;
+  border: none;
+  background: #f7f7fb;
+  border-radius: 10px;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #19191b;
+  cursor: pointer;
+}
+
+.price__plan--buttons button:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+.price__plan--buttons button:last-child {
+  border-radius: 0 10px 10px 0;
+}
+
+.price__plan--buttons .active {
+  background: #5454d4;
+  color: #fff;
+}
+
+.price__items {
+  padding: 15px;
+  overflow: hidden;
+}
+
+.price__items .item {
+  float: left;
+  width: 32%;
+  padding: 34px 24px 28px;
+  background: #f8f8f8;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.price__items .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.price__items .item__plan {
+  margin-bottom: 22px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.price__items .item__amount {
+  height: 56px;
+  margin-bottom: 28px;
+  font-size: 60px;
+  line-height: 56px;
+  font-weight: 700;
+  color: #1d293f;
+}
+
+.price__items .item__amount span {
+  font-size: 28px;
+}
+
+.price__items .item__includes > p {
+  margin-bottom: 28px;
+  font-size: 17;
+  line-height: 50px;
+}
+
+.price__items .item__button button {
+  width: 100%;
+  height: 60px;
+  padding: 10px 20px;
+  border: 1px solid #eae9f2;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #5454d4;
+  cursor: pointer;
+}
+
+.price__items .item:hover {
+  background: #ff7143;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.price__items .item:hover .item__amount {
+  color: #fff;
+}
+
+.price__items .item:hover .item__button button {
+  color: #fff;
+  background: #9f3919;
+  border-color: #9f3919;
 }
