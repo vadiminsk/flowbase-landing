@@ -106,7 +106,12 @@ h4 {
   font-family: 'DM Sans';
 }
 
-.hidden {
+.hidden.hidden-left img {
+  opacity: 0;
+  transform: translateX(-100%) rotate(-45deg);
+}
+
+.hidden.hidden-right img {
   opacity: 0;
   transform: translateX(100%) rotate(45deg);
 }
